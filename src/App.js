@@ -11,7 +11,7 @@ function App() {
 
   const [pageNumber,setPageNumber] = useState(1);
   const [fetchedData,updateFetchedData] = useState([]);
-  const [search,setSearch] = useState("Smith");
+  const [search,setSearch] = useState("");
 
   const {info,results} = fetchedData;
   const api = `https://rickandmortyapi.com/api/character?page=${pageNumber}&name=${search}`;
@@ -39,7 +39,7 @@ function App() {
           </div>
         </div>
       </div>
-      <Pagination setPageNumber={setPageNumber}/> 
+      <Pagination info={info} pageNumber={pageNumber} setPageNumber={setPageNumber}/> 
     </div>
   );
 }
