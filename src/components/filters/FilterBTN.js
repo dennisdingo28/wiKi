@@ -3,7 +3,7 @@ import React from 'react'
 const FilterBTN = ({name,index,item,setPageNumber,task}) => {
     return (
         <div>
-            <style jsx>
+            <style jsx="true">
                 {
                     `
                     .x:checked + label {
