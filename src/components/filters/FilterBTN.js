@@ -21,7 +21,7 @@ const FilterBTN = ({name,index,item,setPageNumber,task}) => {
                     setPageNumber(1);
                     task(item);
                 }} className="form-check-input x" type="radio" name={name} id={`${name}-${index}`}/>
-                <label className="btn btn-outline-primary" for={`${name}-${index}`}>{item}</label>
+                <label className="btn btn-outline-primary" htmlFor={`${name}-${index}`}>{item}</label>
             </div>
         </div>
     )

@@ -1,4 +1,3 @@
-import { type } from '@testing-library/user-event/dist/type';
 import React,{useState,useEffect} from 'react'
 import Cards from "../components/cards/Cards";
 import InputGroup from '../components/filters/category/InputGroup';
@@ -32,15 +31,15 @@ const Episodes = () => {
         <h5 className='text-center'>Air Date {air_date==="" ? "Unknown":air_date}</h5>
       </div>
       <div className='row'>
-        <div className='col-3'>
+        <div className='col-lg-3 col-12'>
           <h4 className='text-center mb-4'>
             Pick Episode
           </h4>
           <InputGroup name="Episode" setId={setId} total={51}/>
         </div>
-        <div className='col-8'>
+        <div className='col-lg-8 col-12'>
           <div className='row'>
-              <Cards results={results}/>
+              <Cards page="/episodes/" results={results}/>
           </div>
         </div>
       </div>

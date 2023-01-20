@@ -26,7 +26,7 @@ const Navbar = () => {
                     </style>
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul className="navbar-nav fs-5">
-                            <NavLink activeClassName="active" to="/" className="nav-link" aria-current="page">Characters</NavLink>
+                            <NavLink activeclassname="active" to="/" className="nav-link" aria-current="page">Characters</NavLink>
                             <NavLink to="/episodes" className="nav-link">Episodes</NavLink>
                             <NavLink to="/location" className="nav-link">Location</NavLink>
                         </ul>

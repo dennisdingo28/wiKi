@@ -34,7 +34,7 @@ const Location = () => {
 
       </div>
       <div className='row'>
-        <div className='col-3'>
+        <div className='col-lg-3 col-12'>
           <h4 className='text-center mb-4'>
             Pick Location
           </h4>
@@ -42,7 +42,7 @@ const Location = () => {
         </div>
         <div className='col-8'>
           <div className='row'>
-              <Cards results={results}/>
+              <Cards page="/location/" results={results}/>
           </div>
         </div>
       </div>
